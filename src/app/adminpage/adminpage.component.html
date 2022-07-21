@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Movies</span>
+                        </a>
+                    </li>
+                    
+                    
+
+                 
+                </ul>
+                <hr>
+
+            </div>
+        </div>
+        <div class="col py-3">
+            welcome to Dashboard<br>
+            <table>
+                <tr>
+                  <th>name</th>
+                  <th>username</th>
+                  <th>email</th>
+                </tr>
+                <tr *ngFor="let item of collection">
+                  <td>{{item.name}}</td>
+                  <td>{{item.username}}</td>
+                  <td>{{item.email}}</td>
+                </tr>
+                
+              </table>
+        </div>
+    </div>
+</div>
